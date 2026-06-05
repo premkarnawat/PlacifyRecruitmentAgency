@@ -13,7 +13,7 @@ import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
 import { Slider } from '@/components/ui/slider'
 import axios from 'axios'
-import type { CandidateProfile } from '@/types'
+import type { WorkflowState } from '@/types/phase1.5'
 
 const API = process.env.NEXT_PUBLIC_API_URL
 
