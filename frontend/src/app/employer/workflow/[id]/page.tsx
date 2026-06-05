@@ -110,10 +110,9 @@ export default function WorkflowDetailPage() {
               <Icon className={`w-4 h-4 ${color}`} />
               <span className="text-xs text-zinc-500">{label}</span>
             </div>
-            <p className={`text-2xl font-bold ${color}`}>
-              {value != null ? Math.round(value) : '—'}
-              {value != null && value <= 100 && '%' !== '' && <span className="text-sm font-normal text-zinc-600"></span>}
-            </p>
+           <p className={`text-2xl font-bold ${color}`}>
+             {value != null ? `${Math.round(value)}${value <= 100 ? '%' : ''}`: '—'}
+           </p>
           </div>
         ))}
       </div>
