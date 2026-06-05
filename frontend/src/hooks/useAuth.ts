@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { useAuthStore } from '@/store/auth.store'
-import type { User } from '@/types'
+import type { User } from '@/types/phase1.5'
 
 export function useAuth() {
   const { user, isLoading, setUser, setLoading, setInitialized, logout } = useAuthStore()
