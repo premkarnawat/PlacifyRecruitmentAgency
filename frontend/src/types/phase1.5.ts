@@ -4,7 +4,42 @@
 // ============================================================
 
 // ── Workflow Engine ───────────────────────────────────────────
+// Base User Type
 
+export interface User {
+  id: string
+  email: string
+
+  role: string
+  full_name: string
+
+  avatar_url?: string
+
+  email_verified: boolean
+
+  created_at: string
+  updated_at: string
+}
+
+// Candidate Profile Type
+
+export interface CandidateProfile {
+  id: string
+  full_name: string
+  email?: string
+
+  headline?: string
+  location?: string
+
+  years_of_experience?: number
+
+  ats_score?: number
+  trust_score?: number
+
+  verification_status?: string
+
+  skills?: string[]
+}
 export type WorkflowState =
   | 'job_created'
   | 'agency_review'
